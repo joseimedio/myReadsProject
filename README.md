@@ -7,7 +7,7 @@ This is the React App submitted by José Imedio (@joseimedio) for the final asse
 To launch the app:
 
 - install all project dependencies with `npm install`
-- start the development server with `npm start`
+- start the development server in /src with `npm start`
 
 ## What You're Getting
 
