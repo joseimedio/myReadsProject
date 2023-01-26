@@ -1,4 +1,4 @@
-# MyReads Project
+# MyReads Project (React)
 This project was completed as a part of the React Nanodegree Program (Udacity) in September 2022 by José Imedio.
 
 It consists on a virtual bookshelf where the user can classify a series of books into three categories: Currently Reading, Want to Read and Read. There's also a simulated database, provided by Udacity, that provides the app with dozens of additional books, so the user can add new elements to the bookshelf.
