@@ -1,17 +1,13 @@
 # MyReads Project
+This project was completed as a part of the React Nanodegree Program (Udacity) in September 2022 by José Imedio. 
+It consists on a virtual bookshelf where the user can classify a series of books into three categories: Currently Reading, Want to Read and Read. There's also a simulated database, provided by Udacity, that provides the app with dozens of additional books, so the user can add new elements to the bookshelf.
 
-This is the React App submitted by José Imedio (@joseimedio) for the final assessment project for Udacity's React Fundamentals course. 
-
-## TL;DR
-
+## Instructions
 To launch the app:
+- install all project dependencies with 'npm install'
+- start the development server in '/src' with 'npm start'
 
-- install all project dependencies with `npm install`
-- start the development server in /src with `npm start`
-
-## What You're Getting
-
-```bash
+## List of files
 ├── README.md - This file.
 ├── package-lock.json 
 ├── package.json 
@@ -41,66 +37,9 @@ To launch the app:
         ├── BooksGrid.js # Maps over the prop 'books' and returns a Book component every time. 
         ├── Book.js # Paints the book received. Adds a checkmark on the dropdown menu if the current book was already saved.
         
-        
-    
-```
+## Possible improvements
+When searching for books in the backend, the search terms are very limited and the behavior of the search tool is not really intuitive. 
 
+## Licensing, Authors and Acknowledgements
+The basic website (HTML and CSS) and the simulated book database were provided by Udacity, Inc.
 
-
-## Backend Server
-
-The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods you will need to perform necessary operations on the backend:
-
-- [`getAll`](#getall)
-- [`update`](#update)
-- [`search`](#search)
-
-### `getAll`
-
-Method Signature:
-
-```js
-getAll();
-```
-
-- Returns a Promise which resolves to a JSON object containing a collection of book objects.
-- This collection represents the books currently in the bookshelves in your app.
-
-### `update`
-
-Method Signature:
-
-```js
-update(book, shelf);
-```
-
-- book: `<Object>` containing at minimum an `id` attribute
-- shelf: `<String>` contains one of ["wantToRead", "currentlyReading", "read"]
-- Returns a Promise which resolves to a JSON object containing the response data of the POST request
-
-### `search`
-
-Method Signature:
-
-```js
-search(query);
-```
-
-- query: `<String>`
-- Returns a Promise which resolves to a JSON object containing a collection of a maximum of 20 book objects.
-- These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
-
-## Important
-
-The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
-
-## Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebook/create-react-app/blob/main/packages/cra-template/template/README.md).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
-# myReads
