@@ -2,6 +2,7 @@
 import Bookshelf from "./Bookshelf";
 import {bookshelves} from "../utils/bookshelves";
 import {Link} from "react-router-dom";
+import React from 'react';
 
 const LandingPage = ({ books, handleChange}) => {
 
